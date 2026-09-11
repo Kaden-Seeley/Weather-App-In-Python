@@ -5,7 +5,7 @@ import asyncio
 
 async def main() -> None:
     async with python_weather.Client(unit=python_weather.IMPERIAL) as client:
-        weather = await client.get('Maine')
+        weather = await client.get('New York')
 
         for daily in weather:
             # print(daily)
